@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+    <!-- <div class="topnav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"> <span class="space">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+          </svg></span></a>
+          <form class="d-lg-flex">s
+           <button class="button">
+            <span class="navimg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg></span></button>
+    <input style="border: none;" placeholder="Search for Transactions" type="text" name="search">
+          </form>
+          <span class="rightalign">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+            </svg>
+        </span>
+        <div class="dropdown">
+          <button class="dropbtn button" style="color:#4D4F5C">John Deo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+            </svg>
+          </button>
+          <div class="dropdown-content">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+            </svg> &nbsp; My Profile </a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
+              <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg> &nbsp; Billing</a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-lock" viewBox="0 0 16 16">
+              <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z"/>
+              <path d="M10 13a1 1 0 0 1 1-1v-1a2 2 0 0 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2Zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1Z"/>
+            </svg> &nbsp; Logout</a>
+          </div>
+        </div> &nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="stark.jpg" class="img">
+        </nav>
+      </div> -->
+
+
+
+    <div class="sidenav">
+        <!-- Add some links to the sidenav -->
+        <a href="#">A C M E</a>
+        <a href="#">Home</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Index</a>
+        <a href="#">Products</a>
+        <a href="#">Admin</a>
+    </div>
+    <div class="header">
+      
+          <img src="./download.png" alt="">
+          
+        <p>Search transactions, invoices or help</p>
+        <div class="bell">
+            <img  src="./bell.png" alt=""> 
+          </div>
+          <div class="girl">
+            
+            <img  class="topimg" src="./profile-pic-01.jpg" alt="" />
+          </div>
+          <h6>John Doe</h6>
+    </div>
+    <h2>Overview</h2>
+    <button class="button">Add Funds</button>
+    <div class="main">
+       
+        
+        <!-- Add a header -->
+        <!-- <h1>My Page with Chart.js</h1> -->
+
+        <!-- Add a container for the charts -->
+            <!-- Add the first chart -->
+            <div class="chartbar">
+                <div class="chartDiv">
+                    <div class="chartOne"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                        <canvas id="chart1" style="display: block;
+                        height: 232px;
+                        width: 284px;
+                        margin-top: 20px;"  class="chartjs-render-monitor"></canvas>
+                    </div>
+                    <!-- Add the second chart -->
+                    <div class="chartOne"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                        <canvas id="chart2" style="display: block;
+                        height: 232px;
+                        width: 284px;
+                        margin-top: 20px;" class="chartjs-render-monitor"></canvas>
+                    </div>
+                </div>
+                <div class="tablebox">
+                    <p>Referrer</p>
+                    <table class="table">
+                        <thead>
+                            <tr class="active">
+                                <th>Location</th>
+                                <th>Views</th>
+                                <th>Sales</th>
+                                <th>Conversion</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>google.com</td>
+                                <td>37.46</td>
+                                <td>752</td>
+                                <td>43%</td>
+                                <td>$19.291</td>
+                            </tr>
+
+                            <tr><td>facebook.com</td>
+                            <td>81.28</td>
+                            <td>782</td>
+                            <td>43%</td>
+                            <td>$19.291</td>
+                            </tr>
+                            <tr>
+                                <td>twitter.com</td>
+                                <td>81.28</td>
+                                <td>693</td>
+                                <td>23%</td>
+                                <td>$19.291</td>
+                            </tr>
+                            <tr>
+                                <td>Direct,email,IM</td>
+                                <td>81.28</td>
+                                <td>453</td>
+                                <td>45%</td>
+
+                                <td>$19.291</td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td>81.28</td>
+                                <td>234</td>
+
+                                <td>43%</td>
+                                <td>$19.291</td>
+                            </tr>
+                            <tr>
+                                <td>Instagram</td>
+                                <td>81.28</td>
+                                <td>432</td>
+                                <td>87%</td>
+                                <td>$18.761</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Add the third chart -->
+            <div class="profilename">
+                <div class="card">
+                    
+                        <div class="img1">
+                        <img  class="rounded-borders" src="./profile-pic-01.jpg" alt="" />
+                      
+                        <h5>
+                           Nick Herasimenka</h5>
+                        <p>United States</p>
+                    </div>
+                     
+                        <div class="users">
+                            <h3>Our Users</h3>
+                            <div class="name1">
+                                <img class="rounded-borders" src="./profile-pic-02.jpg" alt="" />
+                                <h5>Drew James</h5>
+                                <p>United States</p>
+                                <h6>Mobile:8715674877</h6>
+                            </div>
+                            <div class="name2">
+                                <img   class="rounded-borders" src="./profile-pic-02.jpg" alt="" >
+                                <h5>Bavid kames</h5>
+                                <p>United States</p>
+                                <h6>Mobile:8715674877</h6>
+                            </div>
+                            <div class="name3">
+                                <img  class="rounded-borders" src="./profile-pic-02.jpg" alt="" />
+                                <h5>Lavid Emes</h5>
+                                <p>United States</p>
+                                <h6>Mobile:8715674877</h6>
+                            </div>
+                        
+                      
+                    </div>
+                    
+                  
+                   
+
+
+                </div> 
+
+                
+            </div>
+    </div>
+   
+    <div class="videoSec" >
+<p>Product Video</p>
+        <video controls="">
+            <source src="./video thumbnail.png" type="video/mp4">
+           
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+
+
+        <!-- Add the Chart.js library -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <!-- Add a script to create the chart -->
+        <script>
+            // Get the context of the canvas element we want to select
+            var ctx = document.getElementById('chart1').getContext('2d');
+
+            // Create a new chart using the Chart.js library
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'bar',
+
+                // The data for the chart
+                data: {
+                    labels: ['January', 'February', 'March', 'April', 'May'],
+                    datasets: [{
+                        label: 'Population',
+                        data: [200, 300, 400, 500, 600],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }]
+                },
+
+                // Configuration options go here
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+        <script>
+            // Get the context of the canvas element we want to select
+            var ctx = document.getElementById('chart2').getContext('2d');
+
+            // Create a new chart using the Chart.js library
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'doughnut',
+
+                // The data for the chart
+                data: {
+                    labels: ['January', 'February', 'March', 'April', 'May'],
+                    datasets: [{
+                        label: 'Population',
+                        data: [200, 300, 400, 500, 600],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }]
+                },
+
+                // Configuration options go here
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+        <script>
+            // Get the context of the canvas element we want to select
+            var ctx = document.getElementById('chart3').getContext('2d');
+
+            // Create a new chart using the Chart.js library
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'line',
+
+                // The data for the chart
+                data: {
+                    labels: ['January', 'February', 'March', 'April', 'May'],
+                    datasets: [{
+                        label: 'Population',
+                        data: [200, 300, 400, 500, 600],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }]
+                },
+
+                // Configuration options go here
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+        </div></body>

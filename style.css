@@ -1,0 +1,314 @@
+/* Add some style to make the page look nice */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+ 
+}
+.content {
+  background-color: aliceblue;
+}
+
+table.table {
+  width: 100%;
+  margin-top: 12px;
+}
+.name1 {
+  margin-top: 10;
+  margin-top: 20px;
+}
+.users h3{
+  margin-left: 2px;
+  font-size: 18px;
+  color: #696262;
+}
+.tablebox {
+  width: 100%;
+  background: #fff;
+  height: 315px;
+  box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 20%);
+  padding: 10px;
+  margin-top: 20px;
+  
+  border-radius: 10px
+}
+
+/* Create a fixed side navbar */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* .topnav {
+    background-color: #0000000D;
+    width: 100%;
+      padding-left: 5px;
+      border: 0ch;
+      box-shadow: 0px 5px 14px 0px rgba(0,0,0,0.2);
+      margin-left: 230px;
+      display: flex;
+      position: fixed;
+  }
+  .topnav input::-webkit-input-placeholder{
+    overflow: visible;
+  }
+  .topnav img{
+    width: 30px;
+    height:30px;
+    border-radius: 50px;
+    opacity: 1;
+  }
+  .navimg{
+    margin-top: 4px;
+    margin-right: 10px;
+    border-color: #FFFFFF;
+    outline: none;
+    padding: 0px;
+    box-sizing: 0px;
+  } */
+
+.card {
+  width: 100%;
+  background: #fff;
+  height: 100%;
+  box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 20%);
+  padding: 10px;
+  margin: 5px;
+  
+  border-radius: 5px;
+}
+
+P {
+  font-size: 10pt;
+  /* margin-left: 15pt; */
+  color: #341f1b;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  margin-left: 20pt;
+  font-weight: 900;
+  text-align: left;
+  font-size: 15pt;
+}
+
+/* hr {
+  background: rgba(0, 0, 0, 0.85);
+  margin-left: 15pt;
+  height: 2px;
+  margin-top: 0rem;
+  margin-bottom: 0.1rem;
+} */
+
+/* .button {
+  margin-left: 20pt;
+  color: #0c0807;
+  border: 3px solid #341f1b;
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 20px;
+  background: #f4f4ee;
+  text-align: center;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 0px;
+  letter-spacing: 0.3px;
+
+  text-decoration: none;
+} */
+
+/* Style the links inside the sidenav */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+.chartbar {
+  width: 60%;
+  height: 100%;
+}
+.profilename {
+  width: 38%;
+  height:  400px;
+}
+.header img {
+  width: 20px;
+  margin-left: 255px;
+  margin-top: 12px;
+}
+
+/* Add some hover effects to the sidenav links */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+ .bell{
+  margin-left: 836px;
+  margin-top: -32px;
+}
+
+
+.header {
+  background-color: white;
+  height: 55px;
+  border-top-left-radius: 40px;
+}
+.header p{
+  
+    margin-left: 280px;
+    margin-top: -17px;
+}
+
+
+/* Style the content */
+.main {
+  width: calc(100% - 200px);
+  padding: 0px 10px;
+  float: right;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+}
+
+.sidenav {
+  float: left;
+}
+.chartDiv {
+  display: flex;
+  width: 100%;
+}
+.chartOne {
+  width: 48%;
+  background: #fff;
+  padding: 8px;
+  margin: 5px;
+  box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 20%);
+}
+.users p {
+  margin-left: 63px;
+  margin-top: px;
+  margin-top: -7px;
+  color: #acaaaa;
+}
+.users h6{
+  margin-top: -25px;
+  margin-left: 266px;
+}
+.name2 , .name3{
+  margin-top: 30px;
+}
+.button{
+  position: absolute;
+  right: 10px;
+  top: 63px;
+  
+  padding: 10px 29px 10px;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.rounded-borders {
+  width: 60px;
+  height: 60px;
+  padding: 6px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  border: solid 1px #ddd;
+  background: #ddd;
+}
+.header h6 {
+  position: absolute;
+  right: 74px;
+  top: 13px;
+  font-size: 14px;
+  color: #9e9b9b;
+}
+
+.img1 h5 {
+  font-weight: bold;
+  text-align: center;
+}
+.img1 p {
+  text-align: center;
+  color: rgb(184, 182, 182);
+  margin-top: -7px;
+}
+.img1 {
+  border-bottom: 1px solid lightgrey;
+}
+.users img {
+  width: 45px;
+  height: 43px;
+  position: absolute;
+}
+.users {
+  margin-top: 50px;
+}
+.users h5 {
+  margin-left: 62px;
+  font-weight: bold;
+}
+
+.videoSec video{
+  width: 365px;
+  height: 150px;
+}
+.girl{
+  right: 10px;
+  top: -14px;
+  
+ 
+  margin-left: 688px;
+  
+  position: absolute;
+
+}
+img.topimg {
+  width: 32px;
+  border-radius: 50px;
+  margin-top: 28px;
+}
+h2{
+  margin-left: 222px;
+  font-size: 24px;
+  color: #795679;
+}
+
+.videoSec  {
+  width: 397px;
+    right: 10px;
+    top: 529px;
+    height: 300px;
+    position: absolute;
+  
+    height: 100%;
+    height: 193px;
+    background: #fff;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 20%);
+}
+/* Add media queries to make the page responsive on different screen sizes */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
